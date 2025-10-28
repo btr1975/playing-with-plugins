@@ -44,8 +44,7 @@ classifiers = [
 
 
 dependencies = [
-    
-    
+    "gestalt-custom-jinja2-filters",
 ]
 
 [dependency-groups]
@@ -129,5 +128,8 @@ exclude_dirs = [
 [tool.uv]
 keyring-provider = "subprocess"
 native-tls = true
+
+[tool.uv.sources]
+gestalt-custom-jinja2-filters = { git = "ssh://git@github.com/btr1975/gestalt-custom-jinja2-filters.git", rev = "develop" }
 
 

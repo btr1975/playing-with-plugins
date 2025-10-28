@@ -341,6 +341,14 @@ wheels = [
 ]
 
 [[package]]
+name = "gestalt-custom-jinja2-filters"
+version = "0.1.0.dev1"
+source = { git = "ssh://git@github.com/btr1975/gestalt-custom-jinja2-filters.git?rev=develop#6e8ca30436991b8f6a7ffdee687cfdea89cfc3c9" }
+dependencies = [
+    { name = "jinja2" },
+]
+
+[[package]]
 name = "idna"
 version = "3.11"
 source = { registry = "https://pypi.org/simple" }
@@ -573,6 +581,9 @@ wheels = [
 name = "playing-with-plugins"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "gestalt-custom-jinja2-filters" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -589,6 +600,7 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [{ name = "gestalt-custom-jinja2-filters", git = "ssh://git@github.com/btr1975/gestalt-custom-jinja2-filters.git?rev=develop" }]
 
 [package.metadata.requires-dev]
 dev = [
